@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "build_systems": [
+        {
+            "name": "Python (venv)",
+            "cmd": ["${project_path}/venv/bin/python3", "-u", "$file"],
+            "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "selector": "source.python",
+            "env": {
+                "PYTHONPATH": "${project_path}/venv/lib/python3.12/site-packages"
+            },
+            "working_dir": "${project_path}",
+            "syntax": "Packages/Python/Python.sublime-syntax"
+        }
+    ]
+}
