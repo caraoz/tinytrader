@@ -15,7 +15,7 @@ python3 -m venv venv
 pip3 install -r requirements.txt
 
 
-
+## Description
 
 Folder server/ contains server.py which is the order book and matching engine. The book accepts arbitrary usernames (no authentication other than a user_id tag) and only accepts LIMIT and MARKET orders. polling_server.py is a webserver that needs to be instantiated on another port to prevent the engine from crashing. The polling server only has 1 endpoint for the order book polling every 10 seconds. 
 
