@@ -23,4 +23,4 @@ async def send_order():
         print(f"Received: {response}")
 
 # Run the WebSocket client
-asyncio.get_event_loop().run_until_complete(send_order())
+asyncio.run(send_order())
